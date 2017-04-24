@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:id="@+id/amdcardview">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                tools:ignore="ContentDescription"
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:contentDescription=""
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/Socket" />
+            <TextView
+                android:id="@+id/cores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/cores"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/price"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignBaseline="@+id/cores"
+                android:layout_alignBottom="@+id/cores"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RelativeOverlap"
+                android:layout_alignStart="@+id/Socket" />
+            <Button
+                android:id="@+id/cart"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cores"
+                android:layout_centerHorizontal="true"
+                android:text="@string/add_to_cart" />
+            <TextView
+                android:id="@+id/Socket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sockettype"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignBaseline="@+id/Speed"
+                android:layout_alignBottom="@+id/Speed"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/Speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/speed"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignEnd="@+id/cores"
+                android:layout_above="@+id/cores" />
+            <TextView
+                android:id="@+id/model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cart"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignEnd="@+id/cart"
+                android:layout_alignStart="@+id/cart"
+                android:layout_alignTop="@+id/Socket"
+                android:text="@string/model" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
